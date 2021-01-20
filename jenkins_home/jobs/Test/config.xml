@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description>Este es un job de test</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -12,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Hola mundo jenkins...&quot;</command>
+      <command>echo &quot;La fecha y hora es $(date)&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
