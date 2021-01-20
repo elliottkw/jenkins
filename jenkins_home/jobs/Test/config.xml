@@ -13,7 +13,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;La fecha y hora es $(date)&quot;</command>
+      <command>NOMBRE=&quot;ricardo&quot;
+echo &quot;Hola, $NOMBRE la hora es $(date +%F)&quot; &gt; /tmp/nombre</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
