@@ -10,5 +10,12 @@ services:
       - C:/Users/Elliott/Documents/GitHub/jenkins/jenkins_home:/var/jenkins_home
     networks:
       - net
+  vps:
+    container_name: vps
+    image: centos-vps
+    build: 
+      context: centos7
+    networks:
+      - net
 networks:
   net:

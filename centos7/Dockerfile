@@ -16,4 +16,4 @@ RUN \
 
 RUN /usr/sbin/sshd-keygen > /dev/null 2>&1
 
-CMD [ "/usr/sbin/sshd -D" ]
+CMD /usr/sbin/sshd -D
