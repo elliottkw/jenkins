@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
@@ -36,9 +37,9 @@
   <builders>
     <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
       <siteName>elliott@vps:22</siteName>
-      <command>/tmp/script.sh $DB_HOST $DB_PASSDW $DB_NAME $AWS_ACCESS $AWS_SECRET $BUCKET_NAME</command>
+      <command>/tmp/script.sh $DB_HOST $DB_PASSWD $DB_NAME $AWS_ACCESS $AWS_SECRET $BUCKET_NAME</command>
       <execEachLine>false</execEachLine>
-      <hideCommand>true</hideCommand>
+      <hideCommand>false</hideCommand>
     </org.jvnet.hudson.plugins.SSHBuilder>
   </builders>
   <publishers/>
